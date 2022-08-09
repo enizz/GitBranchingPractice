@@ -9,10 +9,11 @@ namespace GitBranchingPractice
     public abstract class Vehicle
     {
         public string Name { get; set; }
+        public int Year { get; set; }
 
         public virtual void Go()
         {
-            Console.WriteLine("we goin");
+            Console.WriteLine($"{Name} we goin");
         }
     }
 }
